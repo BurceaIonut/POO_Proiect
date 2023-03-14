@@ -1,0 +1,54 @@
+1 clasa log in
+	-clasa SINGLETON
+	-stocheaza userul si parola introdusa
+	-cauta daca se gaseste inputul in baza de date
+	-include clasele cont
+
+2 interfata cont
+	-are un user si o parola
+	-friend clasa log in(ca sa poata accesa info despre cont)
+
+3 clasa student: protected cont
+	-poate sa isi vada notele proprii
+	-poate sa isi vada materiile
+	-poate sa isi vada doar restantele
+	-poate sa isi vada media
+
+5 clasa profesor: protected cont
+	-poate sa isi vada studentii de la clasa lui
+	-poate sa adauge note note unui student
+	
+
+6 clasa admin: protected profesor
+	-modifica grupele de studenti
+	-modifica note
+
+7 clasa grupa
+	-denumire
+	-vector de studenti(sau map, hash la nume?)
+	-are un indrumator(profesor)
+	-poate adauga studenti
+	-sterge std
+	-print info(std, indrumator)
+	-returneaza o fisa de note
+
+8 clasa fisa de note
+	-contine notele din grupa, ord dupa index(fara sa se vada nume?)
+	-poate face media generala a grupei
+	-returneaza nr de restantieri
+	-afiseaza restantierii?
+
+9 clasa clasa\an
+	-contine vector grupe
+	-returneaza media gen a grupelor
+	-poate sa vada materiile din semestrul curent
+
+10 clasa materie/disciplina
+	-contine profesorul pt curs, prof pt lab/seminar
+	-orar?
+
+11 clasa main/bazaDate
+	-Singleton
+	-acceseaza baza de date
+	-include clasa\an, log in
+
