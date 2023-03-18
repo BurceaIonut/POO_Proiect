@@ -1,27 +1,39 @@
 1 clasa log in
 	-clasa SINGLETON
 	-stocheaza userul si parola introdusa
-	-cauta daca se gaseste inputul in baza de date
-	-include clasele cont
+	-cauta daca se gaseste inputul in baza de date(aici am putea sa zicem ca se ocupa cu transmiterea acestui request la server)
+	-include clasele cont(de asemenea, aceste clase ar trebui sa fie temporare - doar pe timpul sesiunii unui user)
+	-sa includa exceptii pentru logare incorecta sau gresirea contului de utilizator
+	-sa includa posibilitatea crearii unui cont de student(conturile de profesori vor fi prestabilite)
 
 2 interfata cont
-	-are un user si o parola
-	-friend clasa log in(ca sa poata accesa info despre cont)
+	-are un user si o parola(afiseaza user-ul curent care este logat pe cont - student sau profesor)
+	-friend clasa log in(ca sa poata accesa info despre cont) - aici nu cred ca mai avem nevoie de clasa login ca friend pentru ca deja trecem in alta interfata in care deja avem preluate user-ul si parola din cealalta interfata
+	- posibilitate modificare profil
+	- in functie de categoria utilizatorului sa poata accesa anumite meniuri - pt. profesor: editeaza note, situatie finala studenti etc; pt. studenti: vizualizeaza situatia proprie, notele grupei
+	- posibilitatea de a primi notificari daca un profesor a modificat ceva ce il priveste pe un anumit student sau grupa acestuia
+	- posibilitatea de a avea acces la noutati din partea universitatii legate de invatamant
+	- posibilitate de log out
 
 3 clasa student: protected cont
 	-poate sa isi vada notele proprii
 	-poate sa isi vada materiile
 	-poate sa isi vada doar restantele
 	-poate sa isi vada media
+	-poate sa transmita mesaje altor studenti si profesori(optional)
+	-poate sa vada situatia logistica a facultatii(informatie publica)
+	mai adaugam pe parcurs
 
 5 clasa profesor: protected cont
 	-poate sa isi vada studentii de la clasa lui
 	-poate sa adauge note note unui student
+	de asemenea, mai adaugam
 	
 
 6 clasa admin: protected profesor
 	-modifica grupele de studenti
 	-modifica note
+	-acces general la tot(vom defini ulterior la ce ne referim)
 
 7 clasa grupa
 	-denumire
@@ -51,4 +63,3 @@
 	-Singleton
 	-acceseaza baza de date
 	-include clasa\an, log in
-
