@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Login">
+    <Position X="14" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAgAAAAAAAEAAAAAA=</HashCode>
+      <FileName>Login.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="orar">
+    <Position X="12.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>orar.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="fisa_de_note" BaseTypeListCollapsed="true">
+    <Position X="10.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAEAAQAAEAAAAA=</HashCode>
+      <FileName>fisa_de_note.h</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="grupa" BaseTypeListCollapsed="true">
+    <Position X="12.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAAIAAAAAAEBAAAAAAAAEggFAAAA=</HashCode>
+      <FileName>grupa.h</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Admin">
+    <Position X="8" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AOAAAAIAQAAAAAAEAACBCAAQAADIACAACCAAAhAACIA=</HashCode>
+      <FileName>Admin.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CAccount">
+    <Position X="5.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAQAAAgAAAECEgAAAAAAAAAAAAEgAEAAA=</HashCode>
+      <FileName>CAccount.h</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CStudent">
+    <Position X="3.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAABIAAAAAQAABAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CStudent.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CTeacher">
+    <Position X="5.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAIEIAAAAAAAAAYAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CTeacher.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Materie" BaseTypeListCollapsed="true">
+    <Position X="10.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAACAAAQAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Materie.h</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="Ifdn">
+    <Position X="12.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAQAAEAAAAA=</HashCode>
+      <FileName>Ifdn.h</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Igrupa">
+    <Position X="14" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Igrupa.h</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="IAccount">
+    <Position X="10.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IAccount.h</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Imaterie">
+    <Position X="10.5" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAQAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Imaterie.h</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
