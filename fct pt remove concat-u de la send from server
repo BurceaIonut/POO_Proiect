@@ -1,0 +1,25 @@
+std::string remove_end_cat_from_server(std::string auxmsg) {
+	std::string delimiter = "/";
+	size_t pos = 0;
+	(pos = auxmsg.find(delimiter)) != std::string::npos;
+	std::string token = auxmsg.substr(0, pos);
+	auxmsg.erase(0, pos + delimiter.length());
+
+	return token;
+}
+
+
+std::vector<string> Database::tokenize_instr(std::string msg) {
+    vector<string> instr_vect;
+
+    size_t pos = 0;
+    std::string delimiter = ":";
+    while ((pos = msg.find(delimiter)) != std::string::npos) {
+        std::string token = msg.substr(0, pos);
+        instr_vect.push_back(token);
+        msg.erase(0, pos + delimiter.length());
+    }
+    instr_vect.push_back(msg);
+
+    return instr_vect;
+}
